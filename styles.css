@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: lightpink;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: lightpink;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
+
+.header {
+    display: grid;
+    justify-content: center;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 2fr 1fr 15fr;
+}
+
+.players-score {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    display: grid;
+    justify-content: center;
+}
+
+.game {
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-items: center;
+    align-content: space-evenly;
+    gap: 15px;
+}
+
+.board {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    background-color: black;
+    width: 600px;
+    height: 600px;
+    max-height: 100vw;
+    max-width: 100vw;
+}
+
+.board-cell {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 120px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+}

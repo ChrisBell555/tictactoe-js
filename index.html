@@ -5,9 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        <div class="main">
+            <div class="players-score">
+                <div class="player">
+                    <h2>Player 1</h2>
+                    <h3 id="player-1-score">0</h3>
+                </div>
+                <div class="player">
+                    <h2>Player 2</h2>
+                    <h3 id="player-2-score">0</h3>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="new-game">New Game</button>
+            </div>
+            <div class="game">
+                <div class="turn">
+                    <span id="player-turn">Click New Game to play!</span>
+                </div>
+                <div class="board">
+                    <button class="board-cell" id="00"></button>
+                    <button class="board-cell" id="01"></button>
+                    <button class="board-cell" id="02"></button>
+                    <button class="board-cell" id="10"></button>
+                    <button class="board-cell" id="11"></button>
+                    <button class="board-cell" id="12"></button>
+                    <button class="board-cell" id="20"></button>
+                    <button class="board-cell" id="21"></button>
+                    <button class="board-cell" id="22"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
